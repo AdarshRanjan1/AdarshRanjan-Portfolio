@@ -438,3 +438,8 @@ nav .fa-solid{
     color: #61b752;
     display: block;
 }
+
+.language-used{
+    color: #59d6b1;
+    font-weight: bold;
+}
