@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
             document.getElementById("preloader").style.display = "none";
             document.getElementById("main-content").style.opacity = "1"; // Fade in only main content
         }, 100);
-    }, 3000);
+    }, 2700);
 });
 
 // Mouse cursors
