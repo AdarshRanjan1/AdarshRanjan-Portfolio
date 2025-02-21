@@ -12,7 +12,7 @@ html{
 
 body{
     background-color: #03001C;
-    color: #fff;
+    color: #fdfeff;
     /* opacity: 0; */
     /* transition: opacity 1s ease-in-out; */
 }
@@ -43,6 +43,42 @@ body{
     transition: opacity 1s ease-in-out;
 }
 
+#dynamic-title {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Custom Cursor */
+#custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: #857ed1; /* Light glow effect */
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interference with elements */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: difference; /* Blends with background */
+    z-index: 9999;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Slim and modern */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #03001C; /* Dark background for contrast */
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb (Cool Gradient Effect) */
+::-webkit-scrollbar-thumb {
+    /* background: linear-gradient(45deg, #511d85, #600d98, #560BAD, #3A0CA3, #3F37C9); */
+    background: linear-gradient(45deg, #3C096C, #290661, #24055A, #1B004E, #160041);
+    border-radius: 10px;
+    transition: background 1s ease-in-out;
+}
 
 #header{
     width: 100%;
@@ -62,7 +98,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #262626;
-    /* background-color: #ffecdd; */
     padding: 2px;
     border-radius: 10px;
 }
@@ -79,7 +114,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #fdfeff;
     /* color: #f93700; */
     text-decoration: none;
     font-size: 18px;
@@ -116,11 +151,51 @@ nav ul li a:hover::after{
     color: #B6EADA;
 }
 
+/* Contact Wrapper - Ensures Proper Positioning */
+.contact-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contact Link - Keeps It Visible Above the Animation */
+.contact-link {
+    font-size: 18px;
+    /* font-weight: bold; */
+    position: relative;
+    z-index: 2;
+    color: #fdfeff; /* Adjust color to match your theme */
+    text-decoration: none;
+}
+
+/* Animated Circle */
+.circle-animation {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #a56eff; /* Adjust color to match theme */
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+    opacity: 0.8;
+}
+
+/* Rotation Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* -----------------------------------------about---------------------------- */
 
 #about{
     padding: 80px 0;
-    color: #fff;
+    color: #fdfeff;
 }
 
 .row{
@@ -144,7 +219,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 60px;
-    color: #fff;
+    color: #fdfeff;
     font-weight: 600;
 }
 
@@ -227,7 +302,7 @@ nav ul li a:hover::after{
 
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #fdfeff;
     margin-top: 20px;
     font-size: 12px;
     display: inline-block;
@@ -380,7 +455,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #fdfeff;
     font-size: 18px;
     border-radius: 6px;
 }

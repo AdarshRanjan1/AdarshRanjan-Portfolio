@@ -1,3 +1,22 @@
+// const titles = ["Software Developer", "Web Developer", "Competitive Programmer", "Tech Enthusiast", "Problem Solver"];
+const titles = ["Software Developer", "Web Developer", "Tech Enthusiast", "Problem Solver"];
+let idx = 0;
+const titleElement = document.getElementById("dynamic-title");
+
+function changeTitle() {
+    titleElement.style.opacity = "0"; // Fade out effect
+
+    setTimeout(() => {
+        titleElement.textContent = titles[idx]; // Change text
+        titleElement.style.opacity = "1"; // Fade in effect
+        idx = (idx + 1) % titles.length; // Loop back to start
+    }, 500); // Text change delay
+}
+
+// Change every 2.5 seconds
+setInterval(changeTitle, 2500);
+
+
 // List of fonts to cycle through
 const fonts = ["Orbitron", "Combo", "Josefin Slab", "Capriola", "Glegoo", "Alex Brush", "Homemade Apple"];
 let index = 0;
@@ -22,6 +41,15 @@ window.addEventListener("load", () => {
         }, 100);
     }, 3000);
 });
+
+// Mouse cursors
+const cursor = document.getElementById("custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
+
 
 let tablinks = document.getElementsByClassName('tab-links');
 let tabcontents = document.getElementsByClassName('tab-content');

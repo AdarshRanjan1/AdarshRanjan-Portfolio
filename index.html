@@ -21,6 +21,7 @@
     <div id="preloader">
         <div class="loader-text" id="loading-letter">A</div>
     </div>
+    <div id="custom-cursor"></div>
     <div id="main-content">
         <div id="header">
             <div class="container">
@@ -31,14 +32,19 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
+                        <li class="contact-wrapper">
+                            <a href="#contact" class="contact-link">Contact</a>
+                            <div class="circle-animation"></div>
+                        </li>
                         <i class="fa-solid fa-xmark" onclick="closemenu();"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu();"></i>
                 </nav>
                 <div class="header-text">
-                    <p>Software Developer</p>
-                    <h1>Hi, I am <span>Adarsh Ranjan</span><br>from VIT, Chennai</h1>
+                    <h1>Hi, I am <span>Adarsh Ranjan</span></h1>
+                    <p id="dynamic-title">Software Developer</p>
+                    <!-- <h1>Hi, I am <span>Adarsh Ranjan</span><br>from VIT, Chennai</h1> -->
                 </div>
             </div>
         </div>
@@ -180,6 +186,13 @@
                             <a href="mailto:adarshranjan8427@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></i></a>
                             <!-- <a href="" target="_blank"><i class="fa-solid fa-phone"></i></i></a> -->
                             <a href="https://www.linkedin.com/in/adarshranjan1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://leetcode.com/adarsh11ranjan/" target="_blank">
+                                <!-- <i class="fa-solid fa-code"></i> -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+         alt="LeetCode"
+         width="40px" height="40px"
+         style="vertical-align: middle; filter: invert(85%) sepia(10%) saturate(200%) hue-rotate(10deg); border-radius: 5px; padding: 3px;">
+                            </a>
                             <!-- <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
                             <a href="https://github.com/AdarshRanjan1/" target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a href="https://www.instagram.com/adarshh_1001?igsh=aWwzMzg2MTU1MDd0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
