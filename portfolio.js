@@ -1,3 +1,28 @@
+// List of fonts to cycle through
+const fonts = ["Orbitron", "Combo", "Josefin Slab", "Capriola", "Glegoo", "Alex Brush", "Homemade Apple"];
+let index = 0;
+const letterElement = document.getElementById("loading-letter");
+
+// Change font every 300ms
+const fontChangeInterval = setInterval(() => {
+    letterElement.style.fontFamily = fonts[index];
+    index = (index + 1) % fonts.length;
+}, 350);
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("preloader").style.opacity = "0";
+        document.getElementById("preloader").style.transform = "scale(0.9)";
+
+        clearInterval(fontChangeInterval); // Stop font changing
+
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("main-content").style.opacity = "1"; // Fade in only main content
+        }, 100);
+    }, 3000);
+});
+
 let tablinks = document.getElementsByClassName('tab-links');
 let tabcontents = document.getElementsByClassName('tab-content');
 
@@ -88,7 +113,7 @@ form.addEventListener("submit", function (e) {
 document.querySelector("input[name='Email']").addEventListener("input", function () {
     let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (emailPattern.test(this.value.trim())) {
-        this.setCustomValidity(""); // ✅ Clears error if the email becomes valid
+        this.setCustomValidity(""); // Clears error if the email becomes valid
     }
 });
 

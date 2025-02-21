@@ -13,186 +13,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Combo&family=Josefin+Slab&family=Capriola&family=Glegoo&family=Alex+Brush&family=Homemade+Apple&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
     <script src="https://kit.fontawesome.com/a42ce7eb0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu();"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu();"></i>
-            </nav>
-            <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I am <span>Adarsh Ranjan</span><br>from VIT, Chennai</h1>
-            </div>
-        </div>
+    <div id="preloader">
+        <div class="loader-text" id="loading-letter">A</div>
     </div>
-    <!---------------------------------------- about ---------------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
+    <div id="main-content">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu();"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu();"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I am <span>Adarsh Ranjan</span><br>from VIT, Chennai</h1>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I am a final year Computer Science student from VIT Chennai.I am from Navi Mumbai, Maharashtra.<br>
-                    I am a Software Developer specialized in Full-Stack Development and learning AI & ML.<br></p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+            </div>
+        </div>
+        <!---------------------------------------- about ---------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
                     </div>
-                    <div class="tab-content active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming</span><br>Java, Python, JavaScript, C, C++</li>
-                            <li><span>Development</span><br>HTML, CSS, JavaScript, React.js, Node.js, Express.js, Tailwind CSS</li>
-                            <li><span>Databases</span><br>MongoDB, MySQL, MariaDB, Redis</li>
-                            <li><span>APIs & Tools</span><br>REST APIs, Git, Firebase, Cloudinary, Google Analytics, Google Ads API</li>
-                            <li><span>Concepts</span><br>OOP, Software Architecture, Design Patterns, Scalability & Performance Optimization</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="experience">
-                        <ul>
-                            <li><span style="font-size: medium;">Software Development Intern &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May 2024 - Present</span><br>Worked on Frappe framework and now working on Next.js</li>
-                            <!-- <li><span>May-July</span><br>Designing Websites(projects)(HTML and CSS)</li> -->
-                            <!-- <li><span>Feb-April</span><br>UI/UX for Club's Website</li> -->
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="education"> 
-                        <ul>
-                            <li><span>CGPA (2021-Present)</span><br>8.45</li>
-                            <li><span>12th</span><br>86%</li>
-                            <!-- <li><span>Hello</span><br>Bolo</li> -->
-                        </ul>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am a final year Computer Science student from VIT Chennai.I am from Navi Mumbai, Maharashtra.<br>
+                        I am a Software Developer specialized in Full-Stack Development and learning AI & ML.<br></p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Java, Python, JavaScript, C, C++</li>
+                                <li><span>Development</span><br>HTML, CSS, JavaScript, React.js, Node.js, Express.js, Tailwind CSS</li>
+                                <li><span>Databases</span><br>MongoDB, MySQL, MariaDB, Redis</li>
+                                <li><span>APIs & Tools</span><br>REST APIs, Git, Firebase, Cloudinary, Google Analytics, Google Ads API</li>
+                                <li><span>Concepts</span><br>OOP, Software Architecture, Design Patterns, Scalability & Performance Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span style="font-size: medium;">Software Development Intern &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May 2024 - Present</span><br>Worked on Frappe framework and now working on Next.js</li>
+                                <!-- <li><span>May-July</span><br>Designing Websites(projects)(HTML and CSS)</li> -->
+                                <!-- <li><span>Feb-April</span><br>UI/UX for Club's Website</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education"> 
+                            <ul>
+                                <li><span>CGPA (2021-Present)</span><br>8.45</li>
+                                <li><span>12th</span><br>86%</li>
+                                <!-- <li><span>Hello</span><br>Bolo</li> -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------------------------ services -------------------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title service-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Designer</h2>
-                    <p>I value clean design and thoughtful interactions.</p><br>
-                    <span class="tools">UI, UX, Web, Apps, Logo<br>
-                    Tools - Figma, Canva</span>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Developer</h2>
-                    <p>I like to code things from scratch and like to bring ideas to life in the browser.</p><br>
-                    <span class="tools">HTML, CSS, Javascript, ReactJS, NodeJS, ExpressJS and MongoDB<br>
-                    Tools - VS Code, Google Chrome, Bootstrap</span>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-terminal"></i>
-                    <h2>Programming</h2>
-                    <p>I like solving DSA problems.</p><br> 
-                    <span class="tools">C, C++, Java<br>
-                    Tools - VS Code</span>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------------------------ Portfolio ------------------------------------>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Portfolio</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/movie-review.png">
-                    <div class="layer">
-                        <h3>Movie Review app</h3>
-                        <p>You can perform all the <b style="color: lightgreen;">CRUD</b> operations on this app.<br>
-                        It provides a very modern UI. - HTML,CSS,Javascript,NodeJS and MongoDB<br>
-                        (Available on Git-hub)</p>
-                        <br>
-                        <p class="language-used">HTML, CSS, Javascript, NodeJS, ExpressJS and MongoDB</p>
-                        <a href="https://6543d76cf4a6ae2378aa4732--jazzy-cajeta-8743e1.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+        <!------------------------------------------ services -------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title service-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Designer</h2>
+                        <p>I value clean design and thoughtful interactions.</p><br>
+                        <span class="tools">UI, UX, Web, Apps, Logo<br>
+                        Tools - Figma, Canva</span>
+                        <!-- <a href="#">Learn More</a> -->
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/rock-paper-scissors.png">
-                    <div class="layer">
-                        <h3>Rock Paper Scissors Game</h3>
-                        <p>Everyone one has played this game with friends using their hand why not play with the computer and use the keyboard/mouse.<br>
-                            Your score doesn't go if you close or refresh the browser.<br>
-                            Autoplay option is available.<br>
-                            (Available on Git-hub)
-                        </p>
-                        <br>
-                        <p class="language-used">HTML, CSS and Javascript</p>
-                        <a href="https://github.com/AdarshRanjan1/rock-paper-scissors" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Developer</h2>
+                        <p>I like to code things from scratch and like to bring ideas to life in the browser.</p><br>
+                        <span class="tools">HTML, CSS, Javascript, ReactJS, NodeJS, ExpressJS and MongoDB<br>
+                        Tools - VS Code, Google Chrome, Bootstrap</span>
+                        <!-- <a href="#">Learn More</a> -->
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/chimein-2.png">
-                    <div class="layer">
-                        <h3>ToDo List</h3>
-                        <p>You can use it to add taks with the along with the date.<br>
-                            It arranges it according to the latest date task first.<br>
-                            Even after closing your data is stored when you come back to it.<br>
-                            There is also a delete button to delete your tasks.<br>
-                            (Available on Git-hub)
-                        </p>
-                        <br>
-                        <p class="language-used">ReactJS</p>
-                        <a href="https://github.com/AdarshRanjan1/ChimeIn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2>Programming</h2>
+                        <p>I like solving DSA problems.</p><br> 
+                        <span class="tools">C, C++, Java<br>
+                        Tools - VS Code</span>
+                        <!-- <a href="#">Learn More</a> -->
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/AdarshRanjan1" class="btn" target="_blank">See more</a>
         </div>
-    </div>
-    <!----------------------------------------- Contact ------------------------------------>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <!-- <p><i class="fa-solid fa-envelope"></i></p> -->
-                    <!-- <p><i class="fa-solid fa-phone"></i> </p> -->
-                    <div class="social-media">
-                        <a href="mailto:adarshranjan8427@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></i></a>
-                        <!-- <a href="" target="_blank"><i class="fa-solid fa-phone"></i></i></a> -->
-                        <a href="https://www.linkedin.com/in/adarshranjan1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <!-- <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
-                        <a href="https://github.com/AdarshRanjan1/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/adarshh_1001?igsh=aWwzMzg2MTU1MDd0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <!------------------------------------------ Portfolio ------------------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/movie-review.png">
+                        <div class="layer">
+                            <h3>Movie Review app</h3>
+                            <p>You can perform all the <b style="color: lightgreen;">CRUD</b> operations on this app.<br>
+                            It provides a very modern UI. - HTML,CSS,Javascript,NodeJS and MongoDB<br>
+                            (Available on Git-hub)</p>
+                            <br>
+                            <p class="language-used">HTML, CSS, Javascript, NodeJS, ExpressJS and MongoDB</p>
+                            <a href="https://6543d76cf4a6ae2378aa4732--jazzy-cajeta-8743e1.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
                     </div>
-                    <a href="/images/Adarsh Ranjan - Software Developer.pdf" download="" class="btn btn2">Download CV</a>
+                    <div class="work">
+                        <img src="images/rock-paper-scissors.png">
+                        <div class="layer">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <p>Everyone one has played this game with friends using their hand why not play with the computer and use the keyboard/mouse.<br>
+                                Your score doesn't go if you close or refresh the browser.<br>
+                                Autoplay option is available.<br>
+                                (Available on Git-hub)
+                            </p>
+                            <br>
+                            <p class="language-used">HTML, CSS and Javascript</p>
+                            <a href="https://github.com/AdarshRanjan1/rock-paper-scissors" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/chimein-2.png">
+                        <div class="layer">
+                            <h3>ToDo List</h3>
+                            <p>You can use it to add taks with the along with the date.<br>
+                                It arranges it according to the latest date task first.<br>
+                                Even after closing your data is stored when you come back to it.<br>
+                                There is also a delete button to delete your tasks.<br>
+                                (Available on Git-hub)
+                            </p>
+                            <br>
+                            <p class="language-used">ReactJS</p>
+                            <a href="https://github.com/AdarshRanjan1/ChimeIn" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input  name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button class="btn btn2" type="submit">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+                <a href="https://github.com/AdarshRanjan1" class="btn" target="_blank">See more</a>
             </div>
         </div>
-        <p class="copyright">Copyright Adarsh. Made using HTML, CSS and Javascript.</p>
+        <!----------------------------------------- Contact ------------------------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <!-- <p><i class="fa-solid fa-envelope"></i></p> -->
+                        <!-- <p><i class="fa-solid fa-phone"></i> </p> -->
+                        <div class="social-media">
+                            <a href="mailto:adarshranjan8427@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></i></a>
+                            <!-- <a href="" target="_blank"><i class="fa-solid fa-phone"></i></i></a> -->
+                            <a href="https://www.linkedin.com/in/adarshranjan1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
+                            <a href="https://github.com/AdarshRanjan1/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/adarshh_1001?igsh=aWwzMzg2MTU1MDd0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="/images/Adarsh_Ranjan - Software_Developer.pdf" download="" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input  name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright Adarsh. Made using HTML, CSS and Javascript.</p>
+        </div>
     </div>
 
     <script src="portfolio.js"></script>
